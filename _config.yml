@@ -1,4 +1,5 @@
 name: Okinawa.rb meetups
 github: okinawarb/meetups
 baseurl: /meetups
+markdown: redcarpet
 pygments: true

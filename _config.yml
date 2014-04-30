@@ -1,3 +1,4 @@
 name: Okinawa.rb meetups
 github: okinawarb/meetups
+baseurl: https://okinawarb.github.io/meetups
 pygments: true

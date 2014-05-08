@@ -42,6 +42,7 @@ categories:
 ---
 ここに記事の内容を書く
 
+% git add _posts/2014-05-07-no117-your_name.markdown
 % git commit -m '第117回 Okinawa.rb meetup、@yourname の参加記録を書きました'
 % git remote
 origin

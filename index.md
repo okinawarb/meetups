@@ -49,6 +49,15 @@ your_name
 % git push your_name no116-meetup-what-i-did
 % hub pull-request
 ```
+
+##### 記事の確認方法
+```
+% bundle install
+% bundle exec jekyll server -w
+```
+
+ブラウザで[http://localhost:4000/meetups/](http://localhost:4000/meetups/)を開いて確認してください。
+
 <!-- fixme -->
 <ul>
 {% for post in site.posts %}

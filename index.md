@@ -24,14 +24,30 @@ Okinawa.rbは100回を超えるMeetupを開催していますがあまり活動�
 [great-h.github.io](http://great-h.github.io/)や[yochiyochirb/meetups](https://github.com/yochiyochirb/meetups)を参考にしたいと思ってます。
 
 
-##### 記事の書き方
+##### 記事の書き方(Rubyist向け)
+[hub コマンドで github から fork して pull request をさくっと - #生存戦略 、それは - subtech](https://subtech.g.hatena.ne.jp/secondlife/20120611/1339411825)を参考にしましょう。
 
 ```
 % gem install hub
 % hub clone okinawarb/meetups
 % cd meetups
-% touch _posts/2014-04-30-your-article-name.markdown
-% $EDITOR  _posts/2014-04-30-your-article-name.markdown
+% hub fork
+% git checkout -b no116-meetup-what-i-did
+% cat > _posts/2014-05-07-your-article-name.markdown
+---
+layout: default
+title:  "記事のタイトル"
+date:   2014-05-07
+categories:
+---
+ここに記事の内容を書く
+
+% git commit -m '第116回 Okinawa.rb meetup、@yourname の参加記録を書きました'
+% git remote
+origin
+your_name
+% git push your_name no116-meetup-what-i-did
+% hub pull-request
 ```
 <!-- fixme -->
 <ul>

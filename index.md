@@ -9,6 +9,9 @@ title: Okinawa.rb meetups
 沖縄のRuby/Railsコミュニュティです。
 沖縄のRuby/Railsな方々の情報交換を主な目的として活動しています。
 
+もしも質問等があれば、Twitterで #okinawarb のハッシュタグを付けてつぶやくか、GitHubのissueに書いてください。
+よろしくおねがいします。
+
 ##### 場所・時間
 時間: 毎週水曜日19時<br/>
 場所: <address>ギークハウス沖縄(那覇市古波蔵2-18-14)</address>
@@ -20,9 +23,8 @@ Okinawa.rbは100回を超えるMeetupを開催していますがあまり活動�
 
 [great-h.github.io](http://great-h.github.io/)や[yochiyochirb/meetups](https://github.com/yochiyochirb/meetups)を参考にしたいと思ってます。
 
-記事の書き方についてのドキュメントは準備中です。
-もしも聞きたいことがあれば、Twitterで #okinawarb のハッシュタグを付けてつぶやくか、GitHubのissueに書いてください。
-よろしくおねがいします。
+
+##### 記事の書き方
 
 ```
 % gem install hub

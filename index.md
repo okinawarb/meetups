@@ -32,7 +32,7 @@ Okinawa.rbは100回を超えるMeetupを開催していますがあまり活動�
 % hub clone okinawarb/meetups
 % cd meetups
 % hub fork
-% git checkout -b no116-meetup-what-i-did
+% git checkout -b no117-meetup-what-i-did
 % cat > _posts/2014-05-07-your-article-name.markdown
 ---
 layout: default
@@ -42,11 +42,11 @@ categories:
 ---
 ここに記事の内容を書く
 
-% git commit -m '第116回 Okinawa.rb meetup、@yourname の参加記録を書きました'
+% git commit -m '第117回 Okinawa.rb meetup、@yourname の参加記録を書きました'
 % git remote
 origin
 your_name
-% git push your_name no116-meetup-what-i-did
+% git push your_name no117-meetup-what-i-did
 % hub pull-request
 ```
 

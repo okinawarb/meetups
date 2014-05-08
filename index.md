@@ -33,7 +33,7 @@ Okinawa.rbは100回を超えるMeetupを開催していますがあまり活動�
 % cd meetups
 % hub fork
 % git checkout -b no117-meetup-what-i-did
-% cat > _posts/2014-05-07-your-article-name.markdown
+% cat > _posts/2014-05-07-no117-your_name.markdown
 ---
 layout: default
 title:  "記事のタイトル"

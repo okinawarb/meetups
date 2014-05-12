@@ -2,7 +2,7 @@
 layout: default
 title:  "Okinawa.rb meetup! #117 やったこと @hanachin"
 date:   2014-05-07
-categories:
+categories: no117
 ---
 
 ## [@hanachin_](https://twitter.com/hanachin_)

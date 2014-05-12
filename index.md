@@ -24,7 +24,7 @@ Okinawa.rbは100回を超えるMeetupを開催していますがあまり活動�
 [great-h.github.io](http://great-h.github.io/)や[yochiyochirb/meetups](https://github.com/yochiyochirb/meetups)を参考にしたいと思ってます。
 
 ##### 記事の書き方(ブラウザから書く方法)
-GitHubにログインした状態で[ブラウザでこのページを開いてください](https://github.com/okinawarb/meetups/new/gh-pages/_posts?filename=2014-05-07-no117-your_name.markdown&value=---%0Alayout%3A+default%0Atitle%3A++%22Okinawa.rb%20meetup!%20%23117%20%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8%20@your_name%22%0Adate%3A+++2014-05-07%0Acategories%3A%0A---%0A%E3%81%93%E3%81%93%E3%81%AB%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)。
+GitHubにログインした状態で[ブラウザでこのページを開いてください](https://github.com/okinawarb/meetups/new/gh-pages/_posts?filename=2014-05-07-no117-your_name.markdown&value=---%0Alayout%3A+default%0Atitle%3A++%22Okinawa.rb%20meetup!%20%23117%20%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8%20@your_name%22%0Adate%3A+++2014-05-07%0Acategories%3A+no117%0A---%0A%E3%81%93%E3%81%93%E3%81%AB%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)。
 
 1. `meetups / _posts / [2014-05-07-no117-your_name.markdown]`と表示されてる部分の、`your_name`の部分をあなたの名前に置き換えてください
 2. `title`と書いてある行の、`@your_name`の部分をあなたの名前に置き換えてください
@@ -47,7 +47,7 @@ GitHubにログインした状態で[ブラウザでこのページを開いて�
 layout: default
 title:  "記事のタイトル"
 date:   2014-05-07
-categories:
+categories: no117
 ---
 ここに記事の内容を書く
 

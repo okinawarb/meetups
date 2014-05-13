@@ -9,7 +9,7 @@ title: Okinawa.rb meetups
 沖縄のRuby/Railsコミュニュティです。
 沖縄のRuby/Railsな方々の情報交換を主な目的として活動しています。
 
-もしも質問等があれば、Twitterで #okinawarb のハッシュタグを付けてつぶやくか、GitHubのissueに書いてください。
+もしも質問等があれば、Twitterで [#okinawarb](https://twitter.com/search?f=realtime&q=%23okinawarb&src=typd) のハッシュタグを付けてつぶやくか、GitHubのissueに書いてください。
 よろしくおねがいします。
 
 ##### 場所・時間

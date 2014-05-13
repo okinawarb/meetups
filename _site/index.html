@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Okinawa.rb Meetups by okinawarb</title>
+
+    <link rel="stylesheet" href="/meetups/stylesheets/styles.css">
+    <link rel="stylesheet" href="/meetups/stylesheets/pygment_trac.css">
+    <script src="/meetups/javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Okinawa.rb Meetups</h1>
+        <p class="header"></p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/okinawarb/meetups/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/okinawarb/meetups/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/okinawarb/meetups">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/okinawarb">okinawarb</a></p>
+
+
+      </header>
+      <section>
+        <h3><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to Okinawa.rb</h3>
+
+<p>こんにちはこんにちは!</p>
+
+<h4>Okinawa.rb meetup!とは</h4>
+
+<p>沖縄のRuby/Railsコミュニュティです。
+沖縄のRuby/Railsな方々の情報交換を主な目的として活動しています。</p>
+
+<p>もしも質問等があれば、Twitterで #okinawarb のハッシュタグを付けてつぶやくか、GitHubのissueに書いてください。
+よろしくおねがいします。</p>
+
+<h5>場所・時間</h5>
+
+<p>時間: 毎週水曜日19時<br/>
+場所: <address>ギークハウス沖縄(那覇市古波蔵2-18-14)</address></p>
+
+<h5>参加者にお願いしたいこと(MAY)</h5>
+
+<p>Okinawa.rbは100回を超えるMeetupを開催していますがあまり活動記録がたまってないので、活動記録を残したいと考えています。</p>
+
+<p>可能であれば、<a href="https://github.com/okinawarb/meetups/issues?state=open">okinawarb/meetupsにissueをたてて</a>、やったことの記事を書いて、そのissueを閉じるPull Requestを送ってください。(書かなくてもOKです)</p>
+
+<p><a href="http://great-h.github.io/">great-h.github.io</a>や<a href="https://github.com/yochiyochirb/meetups">yochiyochirb/meetups</a>を参考にしたいと思ってます。</p>
+
+<h5>記事の書き方(ブラウザから書く方法)</h5>
+
+<ol>
+<li>GitHubにログインした状態で<a href="https://github.com/okinawarb/meetups/new/gh-pages/_posts?filename=2014-05-07-no117-your_name.markdown&amp;value=---%0Alayout%3A+default%0Atitle%3A++%22Okinawa.rb%20meetup!%20%23117%20%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8%20@your_name%22%0Adate%3A+++2014-05-07%0Acategories%0A---%0A%E3%81%93%E3%81%93%E3%81%AB%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84">ブラウザでこのページを開いてください</a>。</li>
+<li><code>meetups / _posts / [2014-05-07-no117-your_name.markdown]</code>と表示されてる部分の、<code>your_name</code>の部分をあなたの名前に置き換えてください</li>
+<li><code>title</code>と書いてある行の、<code>@your_name</code>の部分をあなたの名前に置き換えてください</li>
+<li>最後の<code>---</code>の行の下にやったことを書いてください。</li>
+<li>Propose new fileと書いてあるボタンを押す。</li>
+<li>Send pull requestと書いてあるボタンを押す。</li>
+<li><a href="https://github.com/okinawarb/meetups/pulls">Pull Requests · okinawarb/meetups</a>に表示されていたらOKです</li>
+</ol>
+
+<h5>記事の書き方(Rubyist向け)</h5>
+
+<p><a href="https://subtech.g.hatena.ne.jp/secondlife/20120611/1339411825">hub コマンドで github から fork して pull request をさくっと - #生存戦略 、それは - subtech</a>を参考にしましょう。</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">% gem install hub
+% hub clone okinawarb/meetups
+% cd meetups
+% hub fork
+% git checkout -b no117-meetup-what-i-did
+% cat &gt; _posts/2014-05-07-no117-your_name.markdown
+---
+layout: default
+title:  &quot;記事のタイトル&quot;
+date:   2014-05-07
+categories:
+---
+ここに記事の内容を書く
+
+% git add _posts/2014-05-07-no117-your_name.markdown
+% git commit -m &#39;第117回 Okinawa.rb meetup、@yourname の参加記録を書きました&#39;
+% git remote
+origin
+your_name
+% git push your_name no117-meetup-what-i-did
+% hub pull-request
+</code></pre></div>
+<h5>記事の確認方法</h5>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">% bundle install
+% bundle exec jekyll server -w
+</code></pre></div>
+<p>ブラウザで<a href="http://localhost:4000/meetups/">http://localhost:4000/meetups/</a>を開いて確認してください。</p>
+
+<!-- fixme -->
+
+<ul>
+
+  <li>13 May 2014 - <a href="/meetups/2014/05/13/add-jemoji-plugin.html">GitHub Emojiを使えるようにしてみた</a></li>
+
+  <li>30 Apr 2014 - <a href="/meetups/2014/04/30/hi-hiroshima.html">すごい広島パクりたい</a></li>
+
+</ul>
+
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+  <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>

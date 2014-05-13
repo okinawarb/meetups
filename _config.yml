@@ -3,3 +3,5 @@ github: okinawarb/meetups
 baseurl: /meetups
 markdown: redcarpet
 pygments: true
+gems:
+  - jemoji

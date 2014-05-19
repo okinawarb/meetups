@@ -22,6 +22,9 @@ task :new_post do |t, args|
 
   times = get_stdin("何回目のOkinawarb Meetupsに参加しましたか?(前回開催(#{privious_date}):#{privious_times}回): ")
   times = process[:times] if times == ''
+
+  git_checkout("#{Time.now.strftime('%Y-%m-%d')}-no#{times}-#{display_name}")
+
   filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-no#{times}-#{display_name}.#{new_post_ext}"
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
@@ -63,4 +66,8 @@ def process
     date = Time.new(2014,5,21) + 7 * process.div(7) * 24 * 60 * 60
   end
   {times:times, date: date }
+end
+
+def git_checkout(branch_name)
+  `git checkout -b #{branch_name}`
 end

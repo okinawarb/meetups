@@ -17,7 +17,11 @@ desc "Create a new post in #{posts_dir}"
 task :new_post do |t, args|
   #タイトルは自動で作ることにする。
   display_name = get_stdin('あなたの名前は?: ')
-  times = get_stdin('何回目のOkinawarb Meetupsに参加しましたか?: ')
+  privious_date = process[:date].strftime('%Y-%m-%d')
+  privious_times = process[:times]
+
+  times = get_stdin("何回目のOkinawarb Meetupsに参加しましたか?(前回開催(#{privious_date}):#{privious_times}回): ")
+  times = process[:times] if times == ''
   filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-no#{times}-#{display_name}.#{new_post_ext}"
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
@@ -47,4 +51,16 @@ end
 def get_stdin(message)
   print message
   STDIN.gets.chomp
+end
+
+def process
+  process = (Time.now - Time.new(2014,5,21)).div(24*60*60)
+  if process < 0
+    times = 117
+    date = Time.new(2014,5,21)
+  elsif process > 0
+    times = 117 + process.div(7)
+    date = Time.new(2014,5,21) + 7 * process.div(7) * 24 * 60 * 60
+  end
+  {times:times, date: date }
 end

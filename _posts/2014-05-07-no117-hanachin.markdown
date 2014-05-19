@@ -1,0 +1,40 @@
+---
+layout: default
+title:  "Okinawa.rb meetup! #117 やったこと @hanachin"
+date:   2014-05-07
+categories: no117
+---
+
+## [@hanachin_](https://twitter.com/hanachin_)
+
+### やること宣言
+
+[JSON Schemaの規格を読む · Issue #2 · okinawarb/meetups](https://github.com/okinawarb/meetups/issues/2)
+### やったこと
+[@tompng](https://twitter.com/tompng)のMinecraftのやつ見てたけど、途中からギー沖でてスタバに向かいエア参加で[JSON Schema and Hyper-Schema](http://json-schema.org/)のRFCのドラフト読んでた。
+
+[JSON Schema - Documentation](http://json-schema.org/documentation.html)からドラフト辿れる。
+
+規格自体は3つに分かれていた。
+
+- [JSON Schema: core definitions and terminology](http://json-schema.org/latest/json-schema-core.html)
+- [JSON Schema: interactive and non interactive validation](http://json-schema.org/latest/json-schema-validation.html)
+- [JSON Hyper-Schema: Hypertext definitions for JSON Schema](http://json-schema.org/latest/json-schema-hypermedia.html)
+
+#### 所感
+- 参照されているJSONの規格はrfc7159ではなく古いほうのrfc4627
+- json-schema-coreの7.2.3のCanonical dereferencing and inline dereferencing、若干混乱するような
+  - canonical dereferencingを使う実装で動くように、subschemaもエンドポイント用意しないといけないような
+  - 読み進めたところ7.3で、JSON Schemaの作者はcanonical dereferencingを選んだユーザーのために、inline dereferencingで使うのと同じ内容のものを提供しろみたいなこと書いてあった。
+- 7.2.4っぽい感じの書き方だとinline dereferencingになるのかな?
+  - 先にJSON Pointerの仕様読まないとわからなさそう
+  - fragmentでリファレンス張るのはJSON Pointerではないっぽい
+- 7.3でfragmentでリファレンス張るのは後方互換性のために残してるだけだから新しくschema書くときは使うなとある。注意したほうがよさそう。
+
+heroicsまでさわろうとしたけど、スタバ閉店で時間切れだった。
+Rubyぽいことはしてない。
+規格読むと他の規格も自然と読むことになるので、はじめて読むときは時間を多く見積もったほうがいいなと思いました。(小並感)
+
+Okinawa.rbで、issueでやること宣言してもらったけど、やったことをPull Request送って欲しい旨など伝えられてなかったのがちょっと残念かな。
+心のこりはあるにしても、みんなが何やってるか一箇所にまとめて記録してなかったことを考えるとこれだけでも進捗ある気がする。
+ただ、いきなりそういうこと全部考えてやるの大変なので少しずつ整備していきたい。

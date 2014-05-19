@@ -13,27 +13,31 @@ new_page_ext    = "md"     # default new page file extension when using the new_
 # Create a new Post or Page #
 #############################
 
+DATE_FORMAT = "%Y-%m-%d"
+TODAY       = Time.now.strftime(DATE_FORMAT)
+BASE_TIME   = Time.new(2014,5,21)
+
 # usage rake new_post
 desc "Create a new post in #{posts_dir}"
 task :new_post do |t, args|
   #タイトルは自動で作ることにする。
   display_name   = get_stdin('あなたの名前は?: ')
-  privious_date  = process[:date].strftime('%Y-%m-%d')
+  privious_date  = process[:date].strftime(DATE_FORMAT)
   privious_times = process[:times]
 
   times = get_stdin("何回目のOkinawarb Meetupsに参加しましたか?(前回開催(#{privious_date}):#{privious_times}回): ")
   times = process[:times] if times.empty?
 
-  git_checkout("#{Time.now.strftime('%Y-%m-%d')}-no#{times}-#{display_name}")
+  git_checkout("#{TODAY}-no#{times}-#{display_name}")
 
-  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-no#{times}-#{display_name}.#{new_post_ext}"
+  filename = "#{posts_dir}/#{TODAY}-no#{times}-#{display_name}.#{new_post_ext}"
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     #レイアウトの指定とか
     post.puts "---"
     post.puts "layout: default"
     post.puts "title: \"Okinawarb meetup! ##{times} でやったこと by #{display_name}\""
-    post.puts "date: #{Time.now.strftime('%Y-%m-%d')}"
+    post.puts "date: #{TODAY}"
     post.puts "categories: no#{times}"
     post.puts "---"
     #勝手に書いてほしいことをKPTに基いて書いてくれるといいなみたいな
@@ -63,13 +67,13 @@ def get_stdin(message)
 end
 
 def process
-  process = (Time.now - Time.new(2014,5,21)).div(24*60*60)
+  process = (Time.now - BASE_TIME).div(24*60*60)
   if    process < 0
     times = 117
-    date  = Time.new(2014,5,21)
+    date  = BASE_TIME
   elsif process > 0
     times = 117 + process.div(7)
-    date  = Time.new(2014,5,21) + 7 * process.div(7) * 24 * 60 * 60
+    date  = BASE_TIME + 7 * process.div(7) * 24 * 60 * 60
   end
   {times:times, date: date }
 end

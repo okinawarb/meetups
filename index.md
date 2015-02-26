@@ -13,8 +13,12 @@ title: Okinawa.rb meetups
 よろしくおねがいします。
 
 ##### 場所・時間
-時間: 毎週水曜日19時〜 <br/>
-場所: ギークハウス沖縄 ([那覇市古波蔵2-18-14](https://maps.google.co.jp/maps?q=%E9%82%A3%E8%A6%87%E5%B8%82%E5%8F%A4%E6%B3%A2%E8%94%B52-18-14&hl=ja&ie=UTF8&sll=35.780276,139.735604&sspn=0.034955,0.025492&brcurrent=3,0x34e5690c20d95065:0xcdded5d2e2b37795,0,0x34e5690c26b6aa71:0x23c9cf537fb852a6&hnear=%E6%B2%96%E7%B8%84%E7%9C%8C%E9%82%A3%E8%A6%87%E5%B8%82%E5%8F%A4%E6%B3%A2%E8%94%B5%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%98%E2%88%92%EF%BC%91%EF%BC%94&t=m&z=17))
+時間: 毎月水曜日19時〜 <br/>
+場所: MGWave ([那覇市金城3-8-9 一粒ビル401](https://www.google.co.jp/maps/place/%E3%80%92901-0155+%E6%B2%96%E7%B8%84%E7%9C%8C%E9%82%A3%E8%A6%87%E5%B8%82%E9%87%91%E5%9F%8E%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%98%E2%88%92%EF%BC%99+%E4%B8%80%E7%B2%92%E4%B8%8D%E5%8B%95%E7%94%A3%E3%83%93%E3%83%AB/@26.2008815,127.6614647,18z/data=!4m7!1m4!3m3!1s0x34e569b7a6a4956f:0xd16d7ba7cca40ef2!2z44CSOTAxLTAxNTUg5rKW57iE55yM6YKj6KaH5biC6YeR5Z-O77yT5LiB55uu77yY4oiS77yZIOS4gOeykuS4jeWLleeUo-ODk-ODqw!3b1!3m1!1s0x34e569b7a6a4956f:0xd16d7ba7cca40ef2))
+
+##### 直近のMonthly meetup
+
+- [第160回 Okinawa.rb Meetup! - Okinawa.rb | Doorkeeper](https://okinawarb.doorkeeper.jp/events/21390)
 
 ##### 参加者にお願いしたいこと(MAY)
 Okinawa.rbは100回を超えるMeetupを開催していますがあまり活動記録がたまってないので、活動記録を残したいと考えています。

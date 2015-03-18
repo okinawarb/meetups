@@ -5,3 +5,7 @@ markdown: redcarpet
 pygments: true
 gems:
   - jemoji
+exclude:
+  - vendor
+  - README.md
+  - Rakefile.rb

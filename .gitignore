@@ -17,3 +17,7 @@ tramp
 *.swp
 
 _site
+
+vendor
+
+.bundle

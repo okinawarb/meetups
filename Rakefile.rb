@@ -17,10 +17,10 @@ desc "Create a new post in #{posts_dir}"
 task :new_post do |t, args|
   #タイトルは自動で作ることにする。
   display_name = get_stdin('あなたの名前は?: ')
-  privious_date = process[:date].strftime('%Y-%m-%d')
-  privious_times = process[:times]
+  this_month = process[:date].strftime('%Y-%m')
+  meetup_times = process[:times]
 
-  times = get_stdin("何回目のOkinawarb Meetupsに参加しましたか?(前回開催(#{privious_date}):#{privious_times}回): ")
+  times = get_stdin("何回目のOkinawarb Meetupsに参加しましたか?(#{this_month}開催だと、たぶん #{meetup_times}回): ")
   times = process[:times] if times == ''
 
   git_checkout("#{Time.now.strftime('%Y-%m-%d')}-no#{times}-#{display_name}")
@@ -57,15 +57,10 @@ def get_stdin(message)
 end
 
 def process
-  process = (Time.now - Time.new(2014,5,21)).div(24*60*60)
-  if process < 0
-    times = 117
-    date = Time.new(2014,5,21)
-  elsif process > 0
-    times = 117 + process.div(7)
-    date = Time.new(2014,5,21) + 7 * process.div(7) * 24 * 60 * 60
-  end
-  {times:times, date: date }
+  now = Time.now
+  times = 160
+  process = (Time.new(now.year, now.month) - Time.new(2015,3)).div(24*60*60*30)
+  {times:times+process, date: now }
 end
 
 def git_checkout(branch_name)

@@ -2,7 +2,7 @@ okinawarb/meetups
 =======
 Okinawa.rb Meetup!の案内と、活動記録を掲載したウェブページを管理しているリポジトリです。
 
-内容は[Okinawa.rb Meetups](http://www.okinawarb.org/meetups/)から確認できます。
+内容は[Okinawa.rb Meetups](http://www.ruby.okinawa/meetups/)から確認できます。
 
 以下のような感じで、ローカルから確認できます。
 
